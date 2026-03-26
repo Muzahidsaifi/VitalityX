@@ -42,7 +42,9 @@ export default function Contact() {
           <form>
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Email Address" required />
-            <textarea placeholder="Your Message" rows="5"></textarea>
+            
+            {/* ✅ FIX HERE */}
+            <textarea placeholder="Your Message" rows={5}></textarea>
 
             <button type="submit">Send Message</button>
           </form>
