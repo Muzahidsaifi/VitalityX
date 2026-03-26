@@ -1,0 +1,58 @@
+/* Page */
+.supplements {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #020617, #000);
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+/* Glow */
+.supplements-bg {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(34,197,94,0.25), transparent 70%);
+  filter: blur(120px);
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Header */
+.supplements-header {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.supplements-header h1 {
+  font-size: 48px;
+  background: linear-gradient(90deg, #fff, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.supplements-header p {
+  margin-top: 15px;
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+/* Grid */
+.supplements-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .supplements-header h1 {
+    font-size: 32px;
+  }
+}
